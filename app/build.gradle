@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion "33.0.0"
+
+    defaultConfig {
+        applicationId "org.whairt.ielock.x19"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 20260720
+        versionName "A1AS0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+}
